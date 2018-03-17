@@ -1,0 +1,62 @@
+body{
+    background: white;
+}
+
+.about-me{
+    position: absolute;
+    top: 28px;
+    left: calc(50% - 44.385px);
+}
+
+.portfolio{
+    position: absolute;
+    transform: rotate(-90deg);
+    top: 50%;
+    left: 28px;
+}
+
+.skills{
+    position: absolute;
+    transform: rotate(90deg);
+    top: 50%;
+    right: 28px;
+}
+
+.contact{
+    position: absolute;
+    left: calc(50% - 39.095px);
+    bottom: 28px;
+}
+
+.header{
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    color: white;
+}
+
+#typed{
+    color: white;
+}
+
+#typed::after{
+    content: '|';
+    display: inline;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}

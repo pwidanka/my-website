@@ -1,0 +1,65 @@
+.header{
+    padding-top: 10px;
+}
+
+h2 {
+    overflow: hidden;
+    text-align: center;
+}
+  
+h2:before,
+h2:after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+  
+h2:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+  
+h2:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+.container-fluid{
+}
+
+.iphone{
+    width: 50%;
+    position: absolute;
+    right: -20px;
+    z-index: 200;
+}
+
+.mac{
+    width: 100%;
+    /* position: absolute; */
+    /* right: 100px; */
+}
+
+.container-photo{
+    padding: 30px;
+    position: relative;
+    /* background: rgb(185, 175, 175); */
+}
+
+.my-button{
+    width: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.my-buttons{
+    z-index: 300;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

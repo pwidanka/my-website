@@ -1,0 +1,72 @@
+h2 {
+    overflow: hidden;
+    text-align: center;
+}
+  
+h2:before,
+h2:after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+  
+h2:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+  
+h2:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+.container{
+    height: 100%;
+}
+
+.skill{
+    position: relative;
+}
+
+.header{
+    padding-top: 10px;
+}
+
+h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.skill:hover h3{
+    opacity: 0;
+}
+
+.skill img{
+    opacity: 0;
+}
+
+.skill:hover img{
+    opacity: 1;
+}
+
+.my-skills{
+    height: 60%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.arrow-right{
+    
+}
+
+h5{
+    text-align: center;
+}

@@ -1,0 +1,57 @@
+img{
+    cursor: pointer;
+}
+
+.header{
+    padding-top: 10px;
+}
+
+h2 {
+    overflow: hidden;
+    text-align: center;
+}
+  
+h2:before,
+h2:after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+  
+h2:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+  
+h2:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+.photo{
+    margin-top:10px;
+}
+
+.container-photo{
+    margin-top: 20px;
+    text-align: center;
+    background: #DDCCBC;
+    width: 100%;
+    height: auto;
+}
+
+.occupation{
+    margin: 0 auto 10px auto;
+    background: black;
+    color: white;
+    text-align: center;
+    width: 70%;
+}
+
+.container-about-me{
+    margin-top: 20px;
+}

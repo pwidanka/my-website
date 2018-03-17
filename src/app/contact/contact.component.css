@@ -1,0 +1,74 @@
+.container{
+    height: 100%;
+}
+
+.header{
+    padding-top: 10px;
+}
+
+.contact{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 40%;
+}
+
+.container-data{
+    position: relative;
+    border-radius: 10px;
+    background: white;
+    margin: 0 15px;
+    padding: 10px;
+}
+
+.data{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.name-data{
+    font-size: 25px;
+}
+
+.my-data{
+    color: grey;
+    font-size: 16px;
+}
+
+h2 {
+    overflow: hidden;
+    text-align: center;
+}
+  
+h2:before,
+h2:after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+  
+h2:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+  
+h2:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+.footer{
+    font-size: 20px;
+    position: fixed;
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
