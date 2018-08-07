@@ -1,35 +1,33 @@
-<div class="container">
-  <div class="h-100" style="position: relative">
-    <div class="row header">
-      <div class="col-1">
-        <img src="../../assets/down.png" alt="strzalka" width="40px" height="40px" [routerLink]="['/home']">
-      </div>
-      <div class="col-lg-4 offset-lg-3 col-sm-6 offset-sm-2">
-        <h2>Kontakt</h2>
+<div class="container"  (swipedown)="onSwipedown($event)">
+  <div class="row header">
+    <div class="col-1">
+      <i class="fa fa-arrow-circle-down pulse" [routerLink]="['/home']"></i>
+    </div>
+    <div class="col-lg-4 offset-lg-3 col-sm-6 offset-sm-2">
+      <h2>KONTAKT</h2>
+    </div>
+  </div>
+  <div class="d-flex justify-content-center flex-grow contact">
+    <div class="col-3 text-center container-data">
+      <div class="data">
+        <p class="name-data">Telefon</p>
+        <p class="my-data">+48 506519785</p>
       </div>
     </div>
-    <div class="row contact offset-1">
-      <div class="col-3 text-center container-data">
-        <div class="data">
-          <p class="name-data">Telefon</p>
-          <p class="my-data">+48 506519785</p>
-        </div>
+    <div class="col-3 text-center container-data">
+      <div class="data">
+        <p class="name-data">E-mail</p>
+        <p class="my-data">przemyslaw.widanka@gmail.com</p>
       </div>
-      <div class="col-3 text-center container-data">
-        <div class="data">
-          <p class="name-data">E-mail</p>
-          <p class="my-data">przemyslaw.widanka@gmail.com</p>
-        </div>
-      </div>
-      <div class="col-3 text-center container-data">
-        <div class="data">
-          <p class="name-data">Miejscowość</p>
-          <p class="my-data">Gdańsk</p>
-        </div>
+    </div>
+    <div class="col-3 text-center container-data">
+      <div class="data">
+        <p class="name-data">Miejscowość</p>
+        <p class="my-data">Gdańsk</p>
       </div>
     </div>
   </div>
-  <div class="footer">
-      © 2018 by Przemysław Widanka
-  </div>
+</div>
+<div class="footer">
+  © 2018 by Przemysław Widanka
 </div>

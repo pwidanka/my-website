@@ -1,31 +1,60 @@
-<div class="container">
-  <div class="row header">
-    <div class="col-1">
-      <img src="../../assets/left.png" alt="strzalka" width="40px" height="40px" [routerLink]="['/home']">
-    </div>
-    <div class="col-4 offset-3">
-      <h2>Portfolio</h2>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-6">
-      <div class="container-photo1">
-
+<div class="container-fluid d-flex flex-column h-100" (swipeleft)="onSwipeleft($event)">
+  <div id="outer" class="d-flex flex-column h-100">
+    <div class="row header">
+      <div class="col-1">
+        <i class="fa fa-arrow-circle-left pulse" [routerLink]="['/home']"></i>
+      </div>
+      <div class="col-4 offset-3">
+        <h2>PORTFOLIO</h2>
       </div>
     </div>
-    <div class="col-6 container-photo">
-      <div class="">
-        <img src="../../assets/iphone.png" class="iphone" alt="iphone">
-        <img src="../../assets/mac.png" class="mac" alt="mac">
+
+    <div class="row d-flex flex-column h-100 justify-content-center align-items-center">
+      <div class="col-xs-6 left-side d-flex justify-content-center align-items-center">
+        <img src="../../assets/api.png" class="thumbnail" alt="api" draggable="false">
         <div class="my-buttons">
           <a href="https://pwidanka.github.io" target="_blank">
             <button class="btn btn-primary my-button">Podgląd</button>
           </a>
           <a href="https://github.com/pwidanka/pwidanka.github.io" target="_blank">
-            <button class="btn btn-secondary my-button">Kod</button>
+            <button class="btn btn-info my-button">Kod</button>
           </a>
         </div>
       </div>
+      <div class="col-xs-6 right-side">
+        <div class="container-thumbnail-half d-flex justify-content-center align-items-center higher">
+          <img src="../../assets/my-first-project.png" class="thumbnail-with-half-height" alt="ship-game" draggable="false">
+          <div class="my-buttons">
+            <a href="https://pwidanka.github.io" target="_blank">
+              <button class="btn btn-primary my-button">Podgląd</button>
+            </a>
+            <a href="https://github.com/pwidanka/pwidanka.github.io" target="_blank">
+              <button class="btn btn-info my-button">Kod</button>
+            </a>
+          </div>
+        </div>
+        <div class="container-thumbnail-half d-flex justify-content-center align-items-center background-api lower">
+          <img src="../../assets/my-website.png" class="thumbnail-with-half-height" alt="website" draggable="false">
+          <div class="my-buttons">
+            <!-- <a href="https://pwidanka.github.io" target="_blank">
+              <button class="btn btn-primary my-button">Podgląd</button>
+            </a> -->
+            <a href="https://github.com/pwidanka/pwidanka.github.io" target="_blank">
+              <button class="btn btn-info my-button">Kod</button>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
+
   </div>
 </div>
+
+<!-- <div class="my-buttons">
+        <a href="https://pwidanka.github.io" target="_blank">
+          <button class="btn btn-primary my-button">Podgląd</button>
+        </a>
+        <a href="https://github.com/pwidanka/pwidanka.github.io" target="_blank">
+          <button class="btn btn-info my-button">Kod</button>
+        </a>
+      </div> -->

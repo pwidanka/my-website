@@ -5,6 +5,8 @@
 h2 {
     overflow: hidden;
     text-align: center;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-weight: 600;
 }
   
 h2:before,
@@ -12,7 +14,7 @@ h2:after {
     background-color: #000;
     content: "";
     display: inline-block;
-    height: 1px;
+    height: 2px;
     position: relative;
     vertical-align: middle;
     width: 50%;
@@ -28,26 +30,50 @@ h2:after {
     margin-right: -50%;
 }
 
-.container-fluid{
+i{
+    font-size: 40px;
+    cursor: pointer;
 }
 
-.iphone{
-    width: 50%;
-    position: absolute;
-    right: -20px;
-    z-index: 200;
+@keyframes pulse_animation {
+	0% { transform: scale(1); }
+	30% { transform: scale(1); }
+	40% { transform: scale(1.10); }
+	50% { transform: scale(1); }
+	60% { transform: scale(1); }
+	70% { transform: scale(1.10); }
+	80% { transform: scale(1); }
+	100% { transform: scale(1); }
 }
 
-.mac{
-    width: 100%;
-    /* position: absolute; */
-    /* right: 100px; */
+.pulse {
+	animation-name: pulse_animation;
+	animation-duration: 4000ms;
+	transform-origin:70% 70%;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
 }
 
-.container-photo{
-    padding: 30px;
+.container{
+    height: 100%;
     position: relative;
+}
+
+.left-side, .higher, .lower{
+    position: relative;
+    transition: 1s;
     /* background: rgb(185, 175, 175); */
+}
+
+.left-side:hover .my-buttons, .higher:hover .my-buttons, .lower:hover .my-buttons {
+    z-index: 250;
+    opacity: 1;
+    transition: 1s;
+}
+
+.left-side:hover, .higher:hover, .lower:hover{
+    background: none;
+    transition: 1s;
 }
 
 .my-button{
@@ -62,4 +88,43 @@ h2:after {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 1s;
+}
+
+.flex-grow {
+    flex: 1 0 auto;
+}
+
+.left-side, .right-side{
+    width: 50%;
+    height:100%;  
+}
+
+.left-side{
+    background: #d6dfe6;
+    /* margin: 3px; */
+    padding: 25px;
+}
+
+.thumbnail{
+    width: 100%;
+    height: 70%;
+    max-width: 600px;
+}
+
+.container-thumbnail-half{
+    height: 50%;
+    padding: 25px;
+    background: white;
+}
+
+.thumbnail-with-half-height{
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+}
+
+.background-api{
+    background: lightyellow;
 }

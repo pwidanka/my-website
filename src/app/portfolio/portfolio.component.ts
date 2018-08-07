@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortfolioComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private router: Router) { }
+  
   ngOnInit() {
     document.body.style.backgroundImage =  'url("assets/background.png")';
     document.body.style.backgroundPosition = 'center';
@@ -16,4 +17,7 @@ export class PortfolioComponent implements OnInit {
     document.body.style.backgroundSize=  'cover';
   }
 
+  onSwipeleft(event){
+    this.router.navigate(['/home']); 
+  }
 }

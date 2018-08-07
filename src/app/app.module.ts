@@ -8,8 +8,17 @@ import { ContactComponent } from './contact/contact.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { SkillsComponent } from './skills/skills.component';
 import { HomeComponent } from './home/home.component';
+import { HammerGestureConfig, HAMMER_GESTURE_CONFIG } from '@angular/platform-browser';
+import * as Hammer from 'hammerjs';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LoadersCssModule } from 'angular2-loaders-css';
+import { IntroComponent } from './intro/intro.component';
 
-
+export class MyHammerConfig extends HammerGestureConfig {
+  overrides = <any>{
+    'swipe': { direction: Hammer.DIRECTION_ALL }
+  };
+}
 
 @NgModule({
   declarations: [
@@ -18,13 +27,19 @@ import { HomeComponent } from './home/home.component';
     ContactComponent,
     PortfolioComponent,
     SkillsComponent,
-    HomeComponent
+    HomeComponent,
+    IntroComponent
   ],
   imports: [
     BrowserModule,
-    AppRouting
+    AppRouting,
+    BrowserAnimationsModule,
+    LoadersCssModule
   ],
-  providers: [],
+  providers: [{
+    provide: HAMMER_GESTURE_CONFIG,
+    useClass: MyHammerConfig
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

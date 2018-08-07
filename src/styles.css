@@ -2,8 +2,15 @@
 body, html {
     height: 100%;
     margin: 0;
-    background-image: url("assets/tlo.jpg");
+    /* background-image: url("assets/tlo.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
+    /* background: url("assets/tlo.jpg") no-repeat center cover; */
+    overflow: hidden;
+}
+
+.loader{
+    background: rgba(24, 22, 22, 0.781);
+    height: 100%;
 }

@@ -1,4 +1,5 @@
-<div class="container">
+<div class="container-fluid" [ngClass]="{'show': ukryj}" (swipeleft)="onSwipeleft($event)" (swiperight)="onSwiperight($event)" (swipeup)="onSwipeup($event)" (swipedown)="onSwipedown($event)">
+
   <nav>
     <button [routerLink]="['/about-me']" class="btn btn-outline-light btn-lg about-me">O mnie</button>
     <button [routerLink]="['/portfolio']" class="btn btn-outline-light btn-lg portfolio">Portfolio</button>
