@@ -1,51 +1,53 @@
-<div class="container" (swiperight)="onSwiperight($event)">
-  <div class="row header">
-    <div class="col-1">
-      <i class="fa fa-arrow-circle-right pulse" [routerLink]="['/home']"></i>
+<div class="container-fluid h-100" (swiperight)="onSwiperight($event)">
+  <div class="d-flex flex-column h-100">
+    <div class="row header">
+      <div class="col-1 arrow-container">
+        <i class="fa fa-arrow-circle-right pulse" [routerLink]="['/home']"></i>
+      </div>
+      <div class="offset-sm-3 col-sm-4 col-10">
+        <h2>UMIEJĘTNOŚCI</h2>
+      </div>
     </div>
-    <div class="col-6 offset-2">
-      <h2>UMIEJĘTNOŚCI</h2>
-    </div>
-  </div>
-  <div class="row justify-content-center flex-grow contact my-skills">
-    <div class="col-10">
-      <h5>W projektach, które miałem możliwość wykonywać, używałem następujących technologii:</h5>
-    </div>
-    <div class="col-3 text-center skill">
-      <img class="text-center" src="../../assets/html.svg" alt="strzalka" width="100px" height="100px" draggable="false">
-      <h3>HTML5</h3>
-    </div>
-    <div class="col-3 text-center skill">
-      <img class="text-center" src="../../assets/css.svg" alt="strzalka" width="100px" height="100px" draggable="false">
-      <h3>CSS3</h3>
-    </div>
-    <div class="col-3 text-center skill">
-      <img class="text-center" src="../../assets/js.svg" alt="strzalka" width="100px" height="100px" draggable="false">
-      <h3>JAVASCRIPT</h3>
-    </div>
-    <div class="col-3 text-center skill">
-      <img class="text-center" src="../../assets/jquery.svg" alt="strzalka" width="100px" height="100px" draggable="false">
-      <h3>JQUERY</h3>
-    </div>
-    <div class="col-3 text-center skill">
-      <img class="text-center" src="../../assets/git.svg" alt="strzalka" width="100px" height="100px" draggable="false">
-      <h3>GIT</h3>
-    </div>
-    <div class="col-3 text-center skill">
-      <img class="text-center" src="../../assets/ps.svg" alt="strzalka" width="100px" height="100px" draggable="false">
-      <h3>PHOTOSHOP</h3>
-    </div>
-    <div class="col-3 text-center skill">
-      <img class="text-center" src="../../assets/bootstrap.png" alt="strzalka" width="100px" height="100px" draggable="false">
-      <h3>BOOTSTRAP</h3>
-    </div>
-    <div class="col-3 text-center skill">
-      <img class="text-center" src="../../assets/angular.svg" alt="strzalka" width="100px" height="100px" draggable="false">
-      <h3>ANGULAR</h3>
-    </div>
-    <div class="col-12 text-center skill">
-      <img class="text-center" src="../../assets/ts.png" alt="strzalka" width="100px" height="100px" draggable="false">
-      <h3>TYPESCRIPT</h3>
+    <div class="row justify-content-center my-skills">
+      <div class="col-10">
+        <h5>W projektach, które miałem możliwość wykonywać, używałem następujących technologii:</h5>
+      </div>
+      <div class="col-sm-3 col-4 text-center skill">
+        <img class="text-center" src="../../assets/html.svg" alt="strzalka"  draggable="false">
+        <h3>HTML5</h3>
+      </div>
+      <div class="col-sm-3 col-4 text-center skill">
+        <img class="text-center" src="../../assets/css.svg" alt="strzalka"  draggable="false">
+        <h3>CSS3</h3>
+      </div>
+      <div class="col-sm-3 col-4 text-center skill">
+        <img class="text-center" src="../../assets/js.svg" alt="strzalka"  draggable="false">
+        <h3>JAVASCRIPT</h3>
+      </div>
+      <div class="col-sm-3 col-4 text-center skill">
+        <img class="text-center" src="../../assets/jquery.svg" alt="strzalka"  draggable="false">
+        <h3>JQUERY</h3>
+      </div>
+      <div class="col-sm-3 col-4 text-center skill">
+        <img class="text-center" src="../../assets/ts.png" alt="strzalka"  draggable="false">
+        <h3>TYPESCRIPT</h3>
+      </div>
+      <div class="col-sm-3 col-4 text-center skill">
+        <img class="text-center" src="../../assets/angular.svg" alt="strzalka"  draggable="false">
+        <h3>ANGULAR</h3>
+      </div>
+      <div class="col-sm-3 col-4 text-center skill">
+        <img class="text-center" src="../../assets/bootstrap.png" alt="strzalka"  draggable="false">
+        <h3>BOOTSTRAP</h3>
+      </div>
+      <div class="col-sm-3 col-4 text-center skill">
+        <img class="text-center" src="../../assets/git.svg" alt="strzalka"  draggable="false">
+        <h3>GIT</h3>
+      </div>
+      <div class="col-sm-12 col-4 text-center skill">
+        <img class="text-center" src="../../assets/ps.svg" alt="strzalka"  draggable="false">
+        <h3>PHOTOSHOP</h3>
+      </div>
     </div>
   </div>
 </div>

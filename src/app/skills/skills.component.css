@@ -1,34 +1,29 @@
+.row{
+    margin: 0;
+}
+
 h2 {
     overflow: hidden;
     text-align: center;
     /* font-family: 'Montserrat', sans-serif; */
     font-weight: 600;
 }
-  
-h2:before,
-h2:after {
-    background-color: #000;
-    content: "";
-    display: inline-block;
-    height: 2px;
-    position: relative;
-    vertical-align: middle;
-    width: 50%;
-}
-  
-h2:before {
-    right: 0.5em;
-    margin-left: -50%;
-}
-  
-h2:after {
-    left: 0.5em;
-    margin-right: -50%;
+
+.arrow-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 i{
     font-size: 40px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+    i {
+        font-size: 30px;
+    }
 }
 
 @keyframes pulse_animation {
@@ -65,6 +60,12 @@ h3{
     transform: translate(-50%, -50%);
 }
 
+@media screen and (max-width: 500px) {
+    h3 {
+        font-size: 1.17em;
+    }
+}
+
 .container{
     height: 100%;
     position: relative;
@@ -77,6 +78,13 @@ h3{
 
 .skill img{
     opacity: 0;
+    width: 100px;
+}
+
+@media screen and (max-width: 500px) {
+    .skill img {
+        width: 65px;
+    }
 }
 
 .skill:hover img{
@@ -85,11 +93,12 @@ h3{
 }
 
 .my-skills{
-    height: 60%;
+    height: 100%;
     width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
 }
 
 .arrow-right{

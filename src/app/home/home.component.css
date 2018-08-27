@@ -3,9 +3,17 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
     width: 100%;
+    padding: 15px 0;
     opacity: 0;
+}
+
+.flex-grow {
+    flex: 1 0 auto;
+}
+
+h2{
+    font-size: 1.8rem;
 }
 
 .show{
@@ -14,40 +22,62 @@
 }
 
 .about-me{
-    position: absolute;
-    top: 28px;
-    left: calc(50% - 44.385px);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.portfolio-skills{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
 }
 
 .portfolio{
-    position: absolute;
-    transform: rotate(-90deg);
-    top: 50%;
-    left: 28px;
+    transform: rotate(270deg);
+}
+
+@media screen and (max-width: 500px) {
+    .portfolio {
+       margin-left: -15px;
+    }
 }
 
 .skills{
-    position: absolute;
     transform: rotate(90deg);
-    top: 50%;
-    right: 28px;
+}
+
+
+@media screen and (max-width: 500px) {
+    .skills {
+        margin-right: -30px;
+    }
 }
 
 .contact{
-    position: absolute;
-    left: calc(50% - 39.095px);
-    bottom: 28px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
 
 .header{
-    position: absolute;
-    top: 45%;
-    left: 30%;
-    color: white;
+    /* display: flex */
+}
+
+@media screen and (max-width: 500px) {
+    .header {
+        width: 80%;
+        position: absolute;
+        left: 50%;
+        top: 20%;
+        transform: translate(-50%,0%);
+    }
 }
 
 #typed{
     color: white;
+    text-align: center;
 }
 
 #typed::after{

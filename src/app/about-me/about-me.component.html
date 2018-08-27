@@ -1,21 +1,33 @@
-<div class="container" (swipeup)="onSwipeup($event)">
-  <div class="row header">
-    <div class="col-1">
-      <i class="fa fa-arrow-circle-up pulse" [routerLink]="['/home']"></i>
+<div class="container-fluid h-100" (swipeup)="onSwipeup($event)">
+  <div class="d-flex flex-column h-100">
+    <div class="row header">
+      <div class="col-1 arrow-container">
+        <i class="fa fa-arrow-circle-up pulse" [routerLink]="['/home']"></i>
+      </div>
+      <div class="offset-sm-3 col-sm-4 col-10">
+        <h2>O MNIE</h2>
+      </div>
     </div>
-    <div class="col-4 offset-3">
-      <h2>O MNIE</h2>
+    <div class="row h-100">
+      <div class="text col-7 justify-content-center">
+        <p> Nazywam się Przemysław Widanka i jestem absolwentem kursu
+          <i>JavaScript od podstaw</i>, organizowanego przez Software Development Academy. Ukończyłem studia inżynierskie na wydziale Oceanotechniki i Okrętownictwa ze specjalizacją Inżynierii Zasobów Naturalnych. Co więcej, jako dyplomowany Technik Informatyk posiadam bazową wiedzę na temat montażu i eksploatacji systemów komputerowych.
+        </p>
+      </div>
+
+      <div class="col-5 container-photo">
+        <img class="photo" src="../../assets/my-photo.png" alt="my-photo">
+      </div>
+
+      <div class="text col-12">
+        <p> Obecnie pracuję w firmie Else Systemy Informatyczne na stanowisku Młodszego Front-end Developera. Specjalizuję sie w tworzeniu stron typu SPA (Single Page Application) przy użyciu Frameworka Angular. Bez przeszkód potrafię zakodować dowolny projekt graficzny w HTML 5 oraz CSS 3 z zachowaniem zalecanych standardów. Bez problemu operuję biblioteką jQuery, a także popularnym frameworkiem front-end - Twitter Bootstrap.
+        </p>
+      </div>
+      <div class="text col-12">
+        <p class="col-12">Oprócz programowania interesuję się sportem, głównie piłką nożną od B-Klasy po Ligi zagraniczne oraz e-sportem w szczególności Counter Strike GO.
+        </p>
+      </div>
+
     </div>
-  </div>
-  <div class="row">
-    <div class="col-5 container-photo">
-      <img src="../../assets/my.jpg" alt="photo" class="photo" draggable="false">
-      <div class="name">Przemek Widanka</div>
-      <div class="occupation">Front-end Developer</div>
-    </div>
-    <div class="col-7 container-about-me">
-      Nazywam się Przemysław Widanka, jestem młodszym front-end developerem. Jako a
-    </div>
-    <p></p>
   </div>
 </div>

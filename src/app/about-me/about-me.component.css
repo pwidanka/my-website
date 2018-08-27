@@ -1,14 +1,35 @@
+.row{
+    margin: 0;
+}
+
+p i{
+    font-size: 1rem;
+}
+
 img{
     cursor: pointer;
 }
 
+.arrow-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .header{
     padding-top: 10px;
+    margin-bottom: 10px;
 }
 
 i{
     font-size: 40px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+    i {
+        font-size: 30px;
+    }
 }
 
 @keyframes pulse_animation {
@@ -36,38 +57,34 @@ h2 {
     overflow: hidden;
     text-align: center;
 }
-  
-h2:before,
-h2:after {
-    background-color: #000;
-    content: "";
-    display: inline-block;
-    height: 2px;
-    position: relative;
-    vertical-align: middle;
-    width: 50%;
-}
-  
-h2:before {
-    right: 0.5em;
-    margin-left: -50%;
-}
-  
-h2:after {
-    left: 0.5em;
-    margin-right: -50%;
-}
 
 .photo{
-    margin-top:10px;
+    width: 50%;
+    transition: 1s;
+}
+
+@media screen and (max-width: 500px) {
+    .photo {
+       width: 100%;
+    }
+}
+
+.photo:hover{
+    transition: 1s;
+    transform: scale(1.05);
 }
 
 .container-photo{
-    margin-top: 20px;
-    text-align: center;
-    background: #DDCCBC;
-    width: 100%;
-    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+    .container-photo {
+       align-items: flex-start;
+    }
 }
 
 .occupation{
@@ -80,4 +97,45 @@ h2:after {
 
 .container-about-me{
     margin-top: 20px;
+}
+
+.text{
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 1s;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 700px) {
+    .text {
+       padding: 0;
+    }
+}
+
+.text:hover{
+    transition: 1s;
+    transform: scale(1.05);
+}
+
+p{
+    margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+    p {
+        font-size: 12px;
+        padding: 4px;
+    }
+
+    p i{
+        font-size: 12px;
+    }
+}
+
+.container-photo{
+
 }

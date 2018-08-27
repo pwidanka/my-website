@@ -1,14 +1,18 @@
-<div class="container-fluid" [ngClass]="{'show': ukryj}" (swipeleft)="onSwipeleft($event)" (swiperight)="onSwiperight($event)" (swipeup)="onSwipeup($event)" (swipedown)="onSwipedown($event)">
-
-  <nav>
-    <button [routerLink]="['/about-me']" class="btn btn-outline-light btn-lg about-me">O mnie</button>
-    <button [routerLink]="['/portfolio']" class="btn btn-outline-light btn-lg portfolio">Portfolio</button>
-    <button [routerLink]="['/skills']" class="btn btn-outline-light btn-lg skills">Umiejętności</button>
-    <button [routerLink]="['/contact']" class="btn btn-outline-light btn-lg contact">Kontakt</button>
-  </nav>
-
-
-  <div class="row header">
-    <h2 id="typed"></h2>
+<div class="container-fluid d-flex flex-column h-100" [ngClass]="{'show': ukryj}" (swipeleft)="onSwipeleft($event)" (swiperight)="onSwiperight($event)"
+  (swipeup)="onSwipeup($event)" (swipedown)="onSwipedown($event)">
+  <div class="d-flex flex-column flex-grow">
+      <div class="col-12 about-me">
+        <button [routerLink]="['/about-me']" class="btn btn-outline-light btn-lg">O mnie</button>
+      </div>
+      <div class="col-12 portfolio-skills h-100 flex-grow">
+        <button [routerLink]="['/portfolio']" class="btn btn-outline-light btn-lg portfolio">Portfolio</button>
+        <div class="header">
+          <h2 id="typed"></h2>
+        </div>
+        <button [routerLink]="['/skills']" class="btn btn-outline-light btn-lg skills">Umiejętności</button>
+      </div>
+      <div class="col-12 contact">
+        <button [routerLink]="['/contact']" class="btn btn-outline-light btn-lg">Kontakt</button>
+      </div>
   </div>
 </div>
