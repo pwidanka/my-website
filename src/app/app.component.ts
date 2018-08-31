@@ -65,16 +65,16 @@ declare var $: any;
       ]),
     ]),
     trigger('routerTransition', [
-      transition('0 => 1', [    
+      transition('0 => 1', [
         query(':enter, :leave', style({ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, opacity: 1 })),
-        group([ 
+        group([
           query(':enter', [
-            style({ opacity:0 }),
-            animate('1000ms ease-in-out', style({ opacity:1 }))
+            style({ opacity: 0 }),
+            animate('1000ms ease-in-out', style({ opacity: 1 }))
           ]),
           query(':leave', [
-            style({ opacity:1 }),
-            animate('1000ms ease-in-out', style({ opacity:0 }))]),
+            style({ opacity: 1 }),
+            animate('1000ms ease-in-out', style({ opacity: 0 }))]),
         ])
       ])
     ])
@@ -87,14 +87,17 @@ export class AppComponent {
   constructor(private router: Router) { }
 
   ngOnInit() {
+    $(document).on("dragstart", function () {
+      return false;
+    });
     this.router.navigate([''])
   }
 
-  getDepth(outlet: RouterOutlet) { 
+  getDepth(outlet: RouterOutlet) {
     return outlet.activatedRouteData['depth'];
   }
 
-  getTransition(outlet: RouterOutlet){
+  getTransition(outlet: RouterOutlet) {
     return outlet.activatedRouteData['depth'];
   }
 

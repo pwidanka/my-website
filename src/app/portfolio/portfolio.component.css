@@ -2,6 +2,16 @@
     margin: 0;
 }
 
+.flex-grow {
+    flex: 1 0 auto;
+}
+
+@-moz-document url-prefix() {
+    .container-portfolio {
+      height: calc(100% - 60px) !important;
+    }
+  }
+
 .header{
     padding-top: 10px;
 }

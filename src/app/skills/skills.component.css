@@ -9,6 +9,12 @@ h2 {
     font-weight: 600;
 }
 
+@media screen and (max-width: 800px) {
+    h5 {
+        font-size: 14px;
+    }
+}
+
 .arrow-container{
     display: flex;
     align-items: center;
